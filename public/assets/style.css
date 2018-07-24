@@ -4,3 +4,68 @@
 body {
 	
 }
+
+.heading {
+	font-family: 'Varela Round', sans-serif;
+	text-align: center;
+	font-size: 40px;
+}
+
+.frmLst {
+	margin-top: 100px;
+	float: left;
+}
+
+#newThd a {
+	
+	float: left;
+	clear: both;
+	margin: 10px;
+	border-style: solid;
+	border-color: #2A2A2A;
+	background-color: rgba(146,140,140,0.72);
+	text-decoration: none;
+	padding: 5px;
+	color: rgba(53,53,53,1.00);
+	font-family: 'Kanit', sans-serif;
+}
+
+
+.threads a {
+	text-decoration: none;
+	color: #3B3B3B;
+	font-family: 'Questrial', sans-serif;
+	font-size: 30px;
+}
+
+.threads {
+	margin-top: 30px;
+	font-family: 'Kanit', sans-serif;
+	background-color: #B4CEF1;
+	text-decoration: none;
+	color: #3B3B3B;
+	list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

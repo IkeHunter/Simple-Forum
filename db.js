@@ -6,7 +6,7 @@ module.exports = function(mysql){
   		password : 'Password@1234',
   		database : 'crud'
 	});
-
+	
 //connect to server
 	db.connect(function(err){
 		if (err){

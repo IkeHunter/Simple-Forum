@@ -2,29 +2,27 @@
 <html>
 	<head>
 		<script src="http://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+  			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+ 			crossorigin="anonymous"></script>
+ 		<link href="https://fonts.googleapis.com/css?family=Varela+Round|Questrial|Kanit" rel="stylesheet">
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="/assets/style.css" type="text/css"/>
 		<title>Forum</title>
 	</head>
 	<body>
-		<h1>Some random forum</h1>
-		<form method="post">
-			<input id="FormTitle" type="text" name="title" placeholder="Title">
-			<input id="FormBody" type="text" name="body" placeholder="Article">
-			<input id="FormBody" type="text" name="author" placeholder="Name">
-			<button id="btn" type="submit">Add Article</button>
-		</form>
-		<ul>
+		<div class = "heading">The Best Forum</div>
+		
+		<ul class="frmLst">
 			<% for(i = 0; i < dataFor.length; i++){ %>
-				
-				<li id="<%= dataFor[i].id %>"><%= dataFor[i].title %></li>
-				
-
+				<div class="threadStuff">
+					<li class="threads" id="<%= dataFor[i].id %>"><a href="/forum/<%= dataFor[i].id %>"><%= dataFor[i].title %></a></li>
+					<li class="forumDisc" id="<%= dataFor[i].id %>"><%= dataFor[i].discription %></li>
+					<div class="dltThd" id="<%= dataFor[i].id %>">Delete Thread</div>
+				</div>
 			<% } %>
 		</ul>
-			
+		 
+            <div id="newThd"><a href="/new_thread">Add New Thread</a></div>
 	
 	</body>
 	<script src="/assets/script.js" type="text/javascript"></script>
